@@ -1,0 +1,298 @@
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(1, 1, 1, 0.5);
+
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  flex: 1;
+}
+
+.header-logo{
+  margin: 15px;
+
+  flex: 2;
+}
+
+.header-logo-h1{
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.header-nav{
+  flex: 1;
+}
+
+.header-pages{
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.header-button{
+  background-color: white;
+  border: 1px solid darkolivegreen;
+  border-radius: 20px;
+
+  padding: 10px 20px;
+  margin: 5px;
+
+  transition: 0.5s;
+}
+
+.header-button:hover{
+  background-color: darkolivegreen;
+  border-color:  white;
+  .header-button-link{
+    color: white;
+  }
+
+  cursor: pointer;
+}
+
+.header-button:active{
+  opacity: 0.5;
+}
+
+.header-button-link{
+  color: darkolivegreen;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.cover{
+  background-color: rgb(15, 95, 83);
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  flex: 1;
+}
+
+.cover-imgs{
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  max-height: 700px;
+  min-height: 100%;
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  object-fit: contain;
+  flex: 4;
+}
+
+.cover-tree-img{
+  width: 88%;
+  transform: scaleX(-1);
+  top: 0px;
+
+  z-index: 2;
+  position: absolute;
+  object-position: center;
+  display: block;
+  flex: 1;
+}
+
+.cover-decoration-img{
+  width: 90%;
+  object-fit: contain;
+
+  position: relative;
+  z-index: 1;
+  display: block;
+  flex: 1;
+}
+
+.cover-txt{
+  color: rgb(237, 232, 234);
+  margin: 10px;
+
+  text-align: center;
+
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  flex: 3;
+}
+
+.cover-txt-duration{
+  background-color: rgb(237, 232, 234);
+  display: inline-block;
+  width: 30%;
+
+  flex: 1;
+}
+
+.cover-txt-duration-p{
+  background-color: rgb(237, 232, 234);
+  color: rgb(80, 53, 48);
+  font-size: 1.5vw;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.cover-txt-h1{
+  font-size: 6vw;
+  margin: 10px;
+  margin-top: 0px;
+
+  flex: 1;
+}
+
+.cover-txt-p{
+  font-size: 1.5vw;
+  width: 25vw;
+
+  flex: 1;
+}
+
+.info{
+  background-color: rgb(237, 232, 234);
+
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info-txt{
+  color: rgb(80, 53, 48);
+
+  margin: 10px 25px;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.info-txt-p{
+  font-size: 1.5vw;
+}
+
+.info-imgs{
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  max-height: 700px;
+  min-height: 100%;
+
+  padding: 2vw 0vw;
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  flex: 1;
+}
+
+.info-earth-img{
+  width: 50%;
+  top: 5.5vw;
+  right: 26%;
+
+  z-index: 2;
+  position: absolute;
+  object-position: center;
+  display: block;
+  flex: 1;
+}
+
+.info-decoration-img{
+  width: 75%;
+  object-fit: contain;
+
+  position: relative;
+  z-index: 1;
+  display: block;
+  flex: 1;
+}
+
+.un{
+  background-color: rgb(173, 190, 187);
+  padding: 45px;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.un-txt{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 15px;
+  margin-bottom: 4vw;
+}
+
+.un-txt-h1{
+  color: rgb(14, 95, 83);
+
+  margin: 5px 0px;
+}
+
+.un-txt-p{
+  color: rgb(14, 95, 83);
+  width: 90%;
+  text-align: center;
+
+  margin: 0px;
+}
+
+.un-imgs{
+  flex: 1;
+  margin: 10px;
+}
+
+.un-sdg-11-img, .un-sdg-12-img, .un-sdg-13-img, .un-sdg-15-img{
+  height: 18vw;
+  margin: 0vw 2vw;
+  border-radius: 10px;
+}
+
+.total-paper{
+  position: relative;
+}
+
+.total-paper-txt{
+  text-align: center;
+  left: 30%;
+  top: 10%;
+
+  position: absolute;
+  z-index: 10;
+}
+
+.total-paper-txt-h1, .total-paper-txt-amt{
+  font-size: 5vw;
+}
+
+.total-paper-forest-img{
+  height: 45vw;
+  width: 100%;
+  object-fit: cover;
+
+  z-index: 5;
+}
